@@ -28,7 +28,6 @@ string sum = ($"{a}{b}{c}{d}{e}");
 
 int numberBack = int.Parse(sum);
 
-
 if (number == numberBack)
 {
     Console.WriteLine($"Число {number} является палиндромом");
