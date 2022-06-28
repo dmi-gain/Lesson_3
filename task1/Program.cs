@@ -19,23 +19,15 @@ int Prompt(string message)
 int number = Prompt("Введите пятизначное число");
 
 int a = number % 10; 
-Console.WriteLine($"{a}");
 int b = number % 100 / 10;
-Console.WriteLine($"{b}");
 int c = number / 100 % 10;
-Console.WriteLine($"{c}");
 int d = number / 1000 % 10;
-Console.WriteLine($"{d}");
 int e = (number / 10000);
-Console.WriteLine($"{e}");
-
-Console.WriteLine($"{a}{b}{c}{d}{e}");
 
 string sum = ($"{a}{b}{c}{d}{e}");
 
 int numberBack = int.Parse(sum);
 
-Console.WriteLine($"{numberBack}");
 
 if (number == numberBack)
 {
@@ -43,6 +35,7 @@ if (number == numberBack)
 }
 else
     Console.WriteLine($"Число {number} не является палиндромом");
+
 
 
 
